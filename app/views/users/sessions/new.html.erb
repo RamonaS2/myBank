@@ -1,7 +1,7 @@
 <h2>Log in</h2>
 
 <% flash.each do |key, value| %>
-      <div class="flash <%= key %> " ><%= value %></div>
+  <div class="flash <%= key %> " ><%= value %></div>
 <% end %>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -27,5 +27,5 @@
   </div>
 <% end %>
 
-<%= render "profiles/shared/links" %>
-<%= link_to "Sair", site_welcome_index_path%>
+<%= render "users/shared/links" %>
+<%= link_to "Sair", site_welcome_index_path	%>

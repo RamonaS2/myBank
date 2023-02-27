@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
   namespace :site do
     get 'welcome/index'
   end
-  namespace :profiles_backoffice do
+  namespace :users_backoffice do
     get 'welcome/index'
   end
-  devise_for :profiles
   get 'welcome/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

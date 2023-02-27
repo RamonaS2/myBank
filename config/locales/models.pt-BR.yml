@@ -1,11 +1,11 @@
 'pt-BR':
   activerecord:
     models:
-      profile:
-        one: Perfil
-        other: Perfis
+      user:
+        one: Usuário
+        other: Usuários
     attributes:
-      profile:
+      user:
         id: Código
         email: Email
         created_at: Criado em
